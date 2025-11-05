@@ -1,5 +1,5 @@
 ---
-title: "🐄Family_Menu🥕"
+title: "🐄Family Menu🥕"
 author: "Nora"
 date: "2025-11-05"
 output:
@@ -8,35 +8,33 @@ output:
     df_print: paged
 ---
 
-# Welcom to Nora and Reilly's Homemade Studio! {.tabset}
-### Only for families and friends.
+# Welcome to Nora and Reilly's Homemade Studio! {.tabset}
+### Only for family and friends.
 <img src = "images/p3.jpeg" width = "1500" style="display: block; margin: 0 auto;"/>
 
 ## Background
 ### 🧑‍🍳Reilly: What's for dinner?
 ### 👩🏻‍🌾Nora: I don't know. What do you want?
-### 🧑‍🍳Reilly: Idk either. You pick.
-### 👩🏻‍🌾Nora: No, you turn.
-### 🧑‍🍳Reilly: Any option?
-### 👩🏻‍🌾Nora: Ehhhh, one sec, I will build you a website....
+### 🧑‍🍳Reilly: IDK either. You pick.
+### 👩🏻‍🌾Nora: No, It's your turn.
+### 🧑‍🍳Reilly: Any options?
+### 👩🏻‍🌾Nora: Ehhhh, Give me one sec, I will build you a website....
 ### THEN...
 
 
 ## Welcome words
 ### 👩🏻‍🌾Nora:  
-#### G'day mate, How U doing?
+#### G'day mate, How ya doing?
 #### Welcome to Nora and Reilly's homemade studio. 
-#### I build this menu to welcome you guys. You can order anything you want. And also stop Reilly from struggling. Have fun~
+#### I built this menu to welcome you guys. You can order anything you want. And also stop Reilly from struggling. Have fun~
 
 ### 🧑‍🍳Reilly: 
 #### What's goodie? 
-#### Welcome to Reilly & Nora restaurant, We hope you enjoy our cooking and leave us a favourable tip.
+#### Welcome to Reilly & Nora restaurant. We hope you enjoy our cooking and leave us a favourable tip.
 
 ### 🐶Xiaobao:
 #### Give me a bite! pleeeease~
 <img src = "images/p1.jpeg" width = "100">
-
-
 
 
 
@@ -54,10 +52,12 @@ menu <- read.csv("menu.csv",stringsAsFactors = FALSE) %>%
     Image_HTML = paste0(
     '<img src = "', image, '" width = "100"/>'
     )
-  )
+  ) %>% 
+  mutate(reilly_liking_degree = strrep("⭐️", as.numeric(reilly_liking_degree))) %>% 
+  mutate(nora_liking_degree = strrep("🌸", as.numeric(nora_liking_degree)))
 ```
 
-## Chek out the menu!
+## Check out the menu!
 ```{r menu display}
 menu_display <- menu %>% 
   select(
@@ -67,7 +67,7 @@ menu_display <- menu %>%
     'Reilly liking level' = reilly_liking_degree,
     'Nora liking level' = nora_liking_degree,
     'Description' = description,
-    '🌶️spicy level '=  spicy_level,
+    '🌶️spicy leve '=  spicy_level,
     'image' = Image_HTML
   )
 DT::datatable(
