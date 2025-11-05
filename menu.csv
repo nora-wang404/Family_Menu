@@ -1,0 +1,28 @@
+dish_name,category,diet_type,reilly_liking_degree,nora_liking_degree,description,image,spicy_level
+Egg Fried Tomato,Side,V,1,3,"Fresh and healthy, good to mix with rice or noodles",images/egg_fried_tomato.jpeg,0
+Tofu fried cabbage,Side,VG,3,2,Soft and delicious.,images/tofu_fried_cabbage.jpeg,0
+Egg Fried Cucumber,Side,V,2,2,As simple as the name.,images/egg_fried_cucumber.jpeg,0
+Dark Egg With Tofu,Entree,V,3,3,"Famous Chinese black egg, hate it or love it, It's a unique dish",images/dark_egg_with_tofu.jpeg,3
+Cold Chicken,Entree,Chicken,2,3,Spicy flavorful cold chicken,images/cold_chicken.jpeg,3
+Teriyaki Chicken,Main,Chicken,4,3,"Teriyaki flavour, Served with boiled vegetables and rice.",images/teriyaki_chicken.jpeg,0
+Coconut Chicken Soup,Main,Chicken,5,5,Good quality chicken boiled in coconut water with some special veggies. Healthy and Yummy!,images/coconut_chicken_soup.jpeg,2
+Chicken Khaosoy,Main,Chicken,4,2,"Taste good but too hard to make, please don't order ----Reilly",images/chicken_khaosoy.jpeg,2
+Spicy Chicken Potato,Main,Chicken,3,3,Tastes way better than poop,images/spicy_chicken_potato.jpeg,3
+Green/Red Curry Chicken,Main,Chicken,5,1,"It’s impressive—Reilly made a dish this bad, and even offered two flavors of disappointment.. -----Nora",images/green_curry_chicken.jpeg,5
+Hong Shao Rou,Main,Pork,5,4,"Oh man it will take 2 hours to cook, who order this one gotta buy Nora a coffee",images/hongshaorou.jpeg,1
+Mapo Tofu,Main,Pork,2,2,Ayyyy!! Reilly's first Chinese dish learned from the cooking book!,images/mapo_tofu.jpeg,3
+Chilly Peanut Noodles,Main,Pork,4,5,I can’t believe it — I actually tasted a bit of home in Reilly’s cooking. Certified by a real Chinese person. Amazing.,images/chilli_peanut_noodles.jpeg,3
+Braised Beef,Main,Beef,5,5,2 hours cooking can make the hardest beef turn tender.,images/braised_beef.jpeg,2
+Mango Yogurt Pudding,Dessert,VG,4,3,Tropical dessert brings you to Thailand,images/mango_yogurt_pudding.jpeg,0
+French Toast,Dessert,V,5,4,The best French toast! THE BEST,images/french_toast.jpeg,0
+Beef Steak,Main,Beef,4,3,Beef steak is beef steak.,images/beef_steak.jpeg,0
+Beef Don,Main,Beef,4,4,Japanese style beef don.,images/beef_don.jpeg,0
+Lamb Onion,Main,Lamb,3,3,"Cumin, onion and the lamb. Sounds good huh?",images/lamb_onion.jpeg,1
+Lamb Chops,Main,Lamb,3,3,Good quality lamb chops BBQ.,images/lamb_chops.jpeg,1
+Prawn Fried Rice,Main,Seafood,3,2,Classic Asian dish. Can't go wrong,images/prawn_fried_rice.jpeg,0
+Barramundi,Main,Seafood,5,5,Oh damn good fish!,images/barramundi.jpeg,0
+Fried Salmon,Main,Seafood,5,3,Served with lemon chilli mayo.,images/fried_salmon.jpeg,0
+Avocado Prawn salad,Side,Seafood,4,4,Avo + Prawn + Eggs + lettuce + broccoli = Best served with extra crispy chicken.,images/avo_prawn_salad.jpeg,0
+Baked Sushi,Main,Seafood,2,3,"Baked salmon and rice, wrap with seaweed.",images/baked_sushi.jpeg,2
+Banana Bread,Dessert,V,5,4,"""Damn that banana bread is sexy"" ---- one of Reilly's friend.",images/banana_bread.jpeg,0
+Tacco,Main,Beef,3,5,Nora wants it every week!,images/tacco.jpeg,1

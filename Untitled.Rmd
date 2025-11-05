@@ -1,0 +1,88 @@
+---
+title: "🐄Family_Menu🥕"
+author: "Nora"
+date: "2025-11-05"
+output:
+  html_document:
+    theme: journal
+    df_print: paged
+---
+
+# Welcom to Nora and Reilly's Homemade Studio! {.tabset}
+### Only for families and friends.
+<img src = "images/p3.jpeg" width = "1500" style="display: block; margin: 0 auto;"/>
+
+## Background
+### 🧑‍🍳Reilly: What's for dinner?
+### 👩🏻‍🌾Nora: I don't know. What do you want?
+### 🧑‍🍳Reilly: Idk either. You pick.
+### 👩🏻‍🌾Nora: No, you turn.
+### 🧑‍🍳Reilly: Any option?
+### 👩🏻‍🌾Nora: Ehhhh, one sec, I will build you a website....
+### THEN...
+
+
+## Welcome words
+### 👩🏻‍🌾Nora:  
+#### G'day mate, How U doing?
+#### Welcome to Nora and Reilly's homemade studio. 
+#### I build this menu to welcome you guys. You can order anything you want. And also stop Reilly from struggling. Have fun~
+
+### 🧑‍🍳Reilly: 
+#### What's goodie? 
+#### Welcome to Reilly & Nora restaurant, We hope you enjoy our cooking and leave us a favourable tip.
+
+### 🐶Xiaobao:
+#### Give me a bite! pleeeease~
+<img src = "images/p1.jpeg" width = "100">
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(dplyr)
+library(DT)
+library(knitr)
+```
+
+
+```{r load in data}
+menu <- read.csv("menu.csv",stringsAsFactors = FALSE) %>% 
+  mutate(
+    Image_HTML = paste0(
+    '<img src = "', image, '" width = "100"/>'
+    )
+  )
+```
+
+## Chek out the menu!
+```{r menu display}
+menu_display <- menu %>% 
+  select(
+    '🍱Dish name' = dish_name,
+    '🍽️category' =category,
+    '🍖type' = diet_type,
+    'Reilly liking level' = reilly_liking_degree,
+    'Nora liking level' = nora_liking_degree,
+    'Description' = description,
+    '🌶️spicy level '=  spicy_level,
+    'image' = Image_HTML
+  )
+DT::datatable(
+  menu_display,
+  filter = 'top',
+  escape = FALSE,
+  selection = 'multiple',
+  options = list(
+    pageLength = 5,
+    scrollX = TRUE,
+    columnDefs= list(
+      list(orderable = FALSE, targets = which(names(menu_display) == "image") - 1)
+    )
+  )
+)
+```
+
+
